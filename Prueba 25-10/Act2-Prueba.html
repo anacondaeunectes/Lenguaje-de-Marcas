@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act2</title>
+
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+
+</head>
+<body>
+    <h1 align="middle">HOJA DE INSCRIPCIÓN<br>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    <fieldset title="Datos Personales" style="background-color: gray;">
+        <legend style="background-color: floralwhite;">Datos Personales</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label for="apellido">Apellidos:</label><br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label for="DNI">DNI:</label><br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="localidad">Localidad de Nacmiento:</label><br>
+                    <input type="text">
+                </td>
+                <td>
+                    <label for="provicia">Provincia:</label><br>
+                    <select name="provincia" size="2">
+                        <option>Sevilla</option>
+                        <option selected>Huelva</option>
+                        <option>Cádiz</option>
+                        <option>Málaga</option>
+                        <option>Almería</option>
+                        <option>Jaén</option>
+                        <option>Córdoba</option>
+                        <option>Granada</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="nacimiento">Fecha de Nacmiento:</label><br>
+                    <input type="date">     
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dirección">Dirección:</label><br>
+                    <input type="text" size="40">
+                </td>
+                <td>
+                    <label for="código postal">Código Postal:</label><br>
+                    <input type="text"> 
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset title="Forma de acceso" style="background-color: wheat;">
+        <legend style="background-color: floralwhite;">Forma de Acceso</legend>
+            <input type="radio">
+            <label>Directo</label><br>
+            <input type="radio">
+            <label>Prueba Libre</label>
+    
+
+    </fieldset>
+    <br>
+    <fieldset style="background-color: rgb(194, 102, 85);">
+        <legend style="background-color: floralwhite;">Documentos Adjuntados</legend>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" name="DNI">
+                    <label for="DNI">Fotocopia DNI</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="certificado">
+                    <label for="certificado">Certificado académico</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="otros">
+                    <label for="otros">Otros documentos(especifique)</label>
+                </td>
+            </tr>
+        </table>
+    <br>
+    </fieldset>
+    <br>
+    <button>Enviar Solicitud</button>
+</body>
+</html>

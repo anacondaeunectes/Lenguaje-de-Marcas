@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+div {
+    border: blue;
+    width: auto;
+    height: auto;
+}

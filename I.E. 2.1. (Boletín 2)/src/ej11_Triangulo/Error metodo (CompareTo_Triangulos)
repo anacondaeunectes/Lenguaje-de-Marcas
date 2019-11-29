@@ -1,0 +1,35 @@
+
+No entiendo por que esta version del metodo "compareTo_Triangulos" sin meter una variable del tipo boolean me da error. Creo que estan todas las salidas cubiertas pero aun asi me dice que 
+he de añadir una al final.
+
+public boolean compareTo_Triangulos(Triangulo t1, Triangulo t2) {
+		if (t1.tipo_Triangulo()==t2.tipo_Triangulo()) {
+			if (t1.tipo_Triangulo()==1) {
+				if (t1.long_lado1==t2.long_lado1) {
+					return true;
+				}else {
+					return false;
+				}
+			}
+			if (t1.tipo_Triangulo()==2) {
+				t1.ordenarLadoTriangulo();
+				t2.ordenarLadoTriangulo();
+				if (t1.long_lado1==t2.long_lado1 && t1.long_lado3==t2.long_lado3) {
+					return true;
+				}else {
+					return false;
+				}
+			}
+			if (t1.tipo_Triangulo()==3) {
+				t1.ordenarLadoTriangulo();
+				t2.ordenarLadoTriangulo();
+				if (t1.long_lado1==t2.long_lado1 && t1.long_lado2==t2.long_lado2 && t1.long_lado3==t2.long_lado3) {
+					return true;
+				}else {
+					return false;
+				}
+			}
+		}else {
+			return false;
+		}	
+	}
